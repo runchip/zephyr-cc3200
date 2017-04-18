@@ -16,3 +16,17 @@ obj-$(CONFIG_CC3200SDK_BUILTIN) += driverlib/spi.o
 # Need prcm and utils for PRCMCC3200MCUInit which is not in ROM
 obj-$(CONFIG_HAS_CC3200SDK) += driverlib/utils.o
 obj-$(CONFIG_HAS_CC3200SDK) += driverlib/prcm.o
+
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += driverlib/timer.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/source/device.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/source/driver.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/source/flowcont.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/source/fs.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/source/netapp.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/source/netcfg.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/source/nonos.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/source/socket.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/source/spawn.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/source/wlan.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/cc_pal.o
+obj-$(CONFIG_CC3200SDK_SIMPLELINK) += simplelink/cb_weak.o
